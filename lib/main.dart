@@ -6,6 +6,8 @@ void main() {
 }
 
 class App extends StatefulWidget {
+  const App({super.key});
+
   @override
   State<App> createState() => _AppState();
 }
@@ -17,7 +19,6 @@ class _AppState extends State<App> {
 
   void onClicked() {
     numbers.add(numbers.length);
-    print(numbers);
   }
 
   @override
